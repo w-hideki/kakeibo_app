@@ -63,3 +63,7 @@ gem 'gon'
 gem 'c3-rails'
 gem 'd3-rails', '~> 3.5.17'
 gem 'rails-i18n'
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
