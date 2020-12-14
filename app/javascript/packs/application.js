@@ -10,7 +10,7 @@ require("channels")
 import 'bootstrap';
 import '../stylesheets/application';
 require("chartkick")
-require("Chart.bundle")
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
