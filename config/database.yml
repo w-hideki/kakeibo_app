@@ -20,9 +20,6 @@ default: &default
 development:
   <<: *default
   database: kakeibo_app_development
-  username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -53,5 +50,6 @@ test:
 production:
   <<: *default
   database: kakeibo_app_production
-  username: kakeibo_app
-  password: <%= ENV['KAKEIBO_APP_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
