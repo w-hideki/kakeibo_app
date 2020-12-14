@@ -1,0 +1,6 @@
+%footer
+  .footer
+    .footer__contennts
+      = "今日の日付　#{Date.today.strftime("%Y/%m/%d(#{I18n.t('date.abbr_day_names')[Date.today.wday]})")}"
+    .footer__copyright
+      %p Copyright © Wada Hideki All Rights Reserved.

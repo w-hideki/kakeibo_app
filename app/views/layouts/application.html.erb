@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KakeiboApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&amp;display=swap' rel='stylesheet'>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+   <%= render '/layouts/header' %>
+ <%= yield %>
+   <%= render '/layouts/footer' %>
+  </body>
+</html>

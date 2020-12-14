@@ -1,0 +1,18 @@
+.formmain
+  .formmain__category
+    = link_to "収入一覧に戻る", :incomes
+  .formmain__title
+    収入科目登録
+  .field
+    .field__title
+      = form.label :category, "カテゴリー", class: :field__title__label
+    = form.text_field :category, autofocus: true, placeholder:'例) 給料', class: :field__text
+  .field
+    .field__title
+      = form.label :year_month, "年月", class: :field__title__label
+    = form.date_select :year_month, class: :field__text
+  .field
+    .field__title
+      = form.label :value, "価格", class: :field__title__label
+    = form.number_field :value, class: :field__text
+ 

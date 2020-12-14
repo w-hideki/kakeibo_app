@@ -1,0 +1,54 @@
+= javascript_include_tag "//www.google.com/jsapi" 
+.income
+  .income__contents
+    .income__contents__new
+      = link_to "収入の記録", :new_income
+    .income__contents__top
+      = link_to "top", :root, class:"top"
+- if @incomes.present?
+  .income__main
+    -@sums = {}
+    -@pie_charts = {}
+    -@data = {}
+    -@incomes.each do |income|
+      -year_month = income.year_month.strftime('%Y年%m月')
+      -unless @sums.has_key?(year_month)
+        -@sums[year_month] = 0
+        -@pie_charts[year_month] = {}
+        -@data[year_month] = []
+      -unless @pie_charts[year_month].has_key?(income.category)
+        -@pie_charts[year_month][income.category] = 0
+      -@sums[year_month] += income[:value]
+      -@pie_charts[year_month][income.category] += income.value
+      -@data[year_month].push(income)
+      
+    .income__main__sum
+      .income__main__sum__title
+        ="#{@user} 様  -月別集計-"
+      .income__main__sum__category
+        -@pie_charts.each do |key, chart|
+          -sum = 0
+          -chart.each do |_, value|
+            -sum += value
+          %p -年月:#{key}-
+          %p -合計金額: #{sum.to_s(:delimited)} 円-
+          = pie_chart(chart)
+          %table
+            %thead
+              %tr
+                %th カテゴリー
+                %th 日付
+                %th 価格
+                %th 変更項目
+            %tbody
+              - @data[key].each do |data|
+                %tr
+                  %td= data.category
+                  %td= data.year_month.strftime('%Y年%m月%d日')
+                  %td= data.value.to_s(:delimited)
+                  %td
+                    = link_to "編集", [:edit, data]
+                    = link_to "削除", data, method: :delete
+- else
+  .messeage
+    登録されている収入データがありません。

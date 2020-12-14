@@ -1,0 +1,17 @@
+.inputmain
+  .inputmain__category
+    = link_to "支出一覧に戻る", :spendings
+  .inputmain__title
+    支出科目登録
+  .field
+    .field__title
+      = form.label :category, "カテゴリー", class: :field__title__label
+    = form.text_field :category, autofocus: true, placeholder:'例) 食費', class: :field__text
+  .field
+    .field__title
+      = form.label :year_month, "年月", class: :field__title__label
+    = form.date_select :year_month, class: :field__text
+  .field
+    .field__title
+      = form.label :value, "価格", class: :field__title__label
+    = form.number_field :value, class: :field__text

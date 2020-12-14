@@ -1,0 +1,58 @@
+.main{
+  display: flex;
+  &__left{
+    width: 50%;
+    margin-left: 80px;
+    height: 400px;
+  }
+  &__right{
+    width: 50%;
+    &__zandaka{
+      color: black;
+      font-size: 30px;
+      margin: 20px 0;
+    }
+    &__konngetunozandaka{
+      color: black;
+      font-size: 30px;
+      margin: 20px 0;
+    }
+    &__contents{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      font-size: 30px;
+      &__income{
+        border: 2px solid rgb(118, 216, 255);
+        font-size: 20px;
+        text-decoration: none;
+        padding: 11px 50px;
+        border-radius: 4px;
+        transition: .4s;
+        letter-spacing: 0.3rem;
+        margin-right: 50px;
+      } 
+        :hover {
+          background-color: rgb(118, 216, 255);
+          border-color: rgb(118, 216, 255);
+          color: white;
+        }
+      &__spending{
+        border: 2px solid rgb(118, 216, 255);
+        font-size: 20px;
+        text-decoration: none;
+        padding: 11px 50px;
+        border-radius: 4px;
+        transition: .4s;
+        letter-spacing: 0.3rem;
+        margin-right: 50px;
+      } 
+        :hover {
+          background-color: rgb(118, 216, 255);
+          border-color: rgb(118, 216, 255);
+          color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.main
+  .main__left
+    = image_tag('kakeibo.png', width: '90%', height: '80%')
+  .main__right
+    .main__right__zandaka
+      ="#{@user}  様　残高：#{@allzandaka.to_s(:delimited)}円"
+    .main__right__konngetunozandaka
+      ="#{@user}  様　今月の収支差額：#{@zanndaka.to_s(:delimited)}円"
+    .main__right__contents
+      .main__right__contents__income
+        =link_to "収入", :incomes
+      .main__right__contents__spending
+        = link_to "支出", :spendings

@@ -1,0 +1,117 @@
+.inputmain{
+  text-align: center;
+  &__category{
+    margin-top: 50px;
+    a{
+      padding: 11px 95px ;
+      border: 2px solid rgb(118, 216, 255);
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: .4s;
+      letter-spacing: 0.3rem;
+    }
+    :hover {
+      background-color: rgb(118, 216, 255);
+      border-color: rgb(118, 216, 255);
+      color: white;
+    }
+  } 
+  &__title{
+    color:#FF9933;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 70px;
+  }
+  .field{
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    h1{text-align: left;}
+    p{text-align: left;
+      font-size: 12px;
+      }
+    &__title{
+      display: flex;
+    
+      &__label{
+        font-weight: 600;
+      }
+    }
+    &__text{
+      height: 30px;
+      padding: 10px 16px 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      line-height: 1.5;
+      font-size: 16px;
+      width: 100%;
+    }
+    #spending_year_month_1i{
+      height: 50px;
+      padding: 10px 16px 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      line-height: 1.5;
+      font-size: 16px;
+      width: 32%;
+    }
+    #spending_year_month_2i{
+      height: 50px;
+      padding: 10px 16px 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      line-height: 1.5;
+      font-size: 16px;
+      width: 32%;
+    }
+    #spending_year_month_3i{
+      height: 50px;
+      padding: 10px 16px 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      line-height: 1.5;
+      font-size: 16px;
+      width: 32%;
+    }
+  }
+  .field__form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    &__text{
+      height: 48px;
+      padding: 10px 16px 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      line-height: 1.5;
+      font-size: 16px;
+      width: 48%;
+    }
+}
+}
+.boten{
+  text-align: center;
+  margin-bottom: 50px;
+  input{
+  padding: 8px 130px ;
+  border: 2px solid rgb(118, 216, 255);
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: .4s;
+  letter-spacing: 0.3rem;
+  background-color: white;
+  color: rgb(0, 119, 255);
+}
+:hover {
+  background-color: rgb(118, 216, 255);
+  border-color: rgb(118, 216, 255);
+  color: white;
+ }
+}
