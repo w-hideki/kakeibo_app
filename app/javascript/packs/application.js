@@ -10,7 +10,6 @@ require("channels")
 import 'bootstrap';
 import '../stylesheets/application';
 require("chartkick")
-require("Chart.js")
 require("Chart.bundle")
 
 
