@@ -1,10 +1,9 @@
-%header
-  .header
-    .header__title
-      かけ〜ぼ
-    .header__contents
-      月ごとの収入、支出、今月の収支金額、全体の残高がわかる家計簿アプリです。
-    .header__logout
-    - if user_signed_in?
-      = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__logout__btn"
-    - else
+.header
+  .header__title
+    かけ〜ぼ
+  .header__contents
+    月ごとの収入、支出、今月の収支金額、全体の残高がわかる家計簿アプリです。
+  .header__logout
+  - if user_signed_in?
+    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "header__logout__btn"
+  - else
