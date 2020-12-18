@@ -48,13 +48,7 @@ class IncomesController < ApplicationController
      redirect_to :incomes
    end
  
-   private
-   
-   # def income_group_by 
-   #   @sums = Income.order(year_month: :asc).group_by{|income| income.year_month.to_date.strftime('%m')}
-   #   gon.incomes_group_by = @sums
-   # end
- 
+   private 
  
    def income_params
      params.require(:income).permit(:category, :year_month, :value).merge(user_id: current_user.id)
