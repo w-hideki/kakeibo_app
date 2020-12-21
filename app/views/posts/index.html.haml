@@ -1,6 +1,6 @@
 .main
   .main__left
-    = image_tag('kakeibo.png', width: '90%', height: '90%')
+    = image_tag 'kakeibo.png', class:"image"
   .main__right
     .main__right__zandaka
       ="#{@user}  様　残高：#{@allzandaka.to_s(:delimited)}円"
