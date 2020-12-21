@@ -44,7 +44,7 @@
 
 # トップページにて、今月の収支金額の差額、全体の残高が見れる
 
-<img src="git.png">
+<img src="https://gyazo.com/072e72c5e944319e480e57dbed5a462c.png">
 
 ## 目指した課題解決
 
