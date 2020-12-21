@@ -24,30 +24,34 @@
 
 # まずはアカウント登録、またはログイン
 
-<img src="https://gyazo.com/45061e381ef47f4aac04dfaac3d72c00">
+<img src="https://gyazo.com/45061e381ef47f4aac04dfaac3d72c00.png">
 
 # 収入の記録
 
-<img src="https://gyazo.com/47de2ed5b60f9067966c32deda1ec626">
+<img src="https://gyazo.com/47de2ed5b60f9067966c32deda1ec626.png">
 
 # 収入の一覧が見れる
 
-<img src="https://gyazo.com/c39e90f726aaab82592494ed4f5074f3">
+<img src="https://gyazo.com/c39e90f726aaab82592494ed4f5074f3.png">
 
 # 支出の記録
 
-<img src="https://gyazo.com/6c7634541bb0fed150162afdc0a1ad55">
+<img src="https://gyazo.com/6c7634541bb0fed150162afdc0a1ad55.png">
 
 # 支出の一覧が見れる
 
-<img src="https://gyazo.com/3ddedbf8efbcc70b3649c35b1fe21a6a">
+<img src="https://gyazo.com/3ddedbf8efbcc70b3649c35b1fe21a6a.png">
 
 # トップページにて、今月の収支金額の差額、全体の残高が見れる
-<img src="https://gyazo.com/6c33e98a6376d4ddeadd90648af589ce">
+<img src="https://gyazo.com/6c33e98a6376d4ddeadd90648af589ce.png">
 
 ## 目指した課題解決
 
-# どのような世代の人でも使いやすいようシンプルで、操作がわかりやすく、かつ情報が瞬時にわかること。極力、計算などで頭を使わないようにし、ユーザーに継続的にアプリを使ってもらうこと。家族で使用しても、自分以外には、記録が見られないこと。
+- どのような世代の人でも使いやすいようシンプルで、操作がわかりやすく、かつ情報が瞬時にわかること
+
+- 極力、計算などで頭を使わないようにし、ユーザーに継続的にアプリを使ってもらうこと
+
+- 家族で使用しても、自分以外には、記録が見られないこと。
 
 ## 洗い出した要件
 
@@ -137,9 +141,9 @@
 
 # 開発環境
 
-# ruby-version 2.6.5
-# rails-version 6.0.0
-# mysql2-version 0.4.4
+- ruby-version 2.6.5
+- rails-version 6.0.0
+- mysql2-version 0.4.4
 
 ```
 git clone URL
