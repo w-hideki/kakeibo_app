@@ -16,9 +16,9 @@
 
 ## テスト用アカウント
 
-# ログイン用テストユーザー
-- Eメール：test@sample.com
-- パスワード：111aaa
+- ログイン用テストユーザー
+-  Eメール：test@sample.com
+-  パスワード：111aaa
 
 ## 利用方法
 
@@ -93,11 +93,11 @@
 
 - ストーリー（ユースケース）：アカウント登録していなければ、名前とEメール、パスワードを入力。登録していれば、Eメールとパスワードを入力してログイン。
 
-# 見積もり（所要時間）：１時間
+- 見積もり（所要時間）：１時間
 
 ## データベース設計
 
-## userテーブル
+# userテーブル
 
 | Column             | Type   | Options     |
 | ------------------ | ------ | ----------- |
@@ -105,13 +105,13 @@
 | email              | string | null: false |
 | encrypted_password | string | null :false |
 
-### Association
+# Association
 
 - has_many :incomes
 
 - has_many :spendings
 
-## incomeテーブル
+# incomeテーブル
 
 | Column     | Type       | Options                        |
 |------------| ---------- | ------------------------------ |
@@ -120,11 +120,11 @@
 | value      | integer    | null :false                    |
 | user       | references | null: false, foreign_key: true |
 
-### Association
+# Association
 
 - belongs_to :user
 
-## spendingテーブル
+# spendingテーブル
 
 | Column     | Type       | Options                        |
 |------------| ---------- | ------------------------------ |
@@ -133,7 +133,7 @@
 | value      | integer    | null :false                    |
 | user       | references | null: false, foreign_key: true |
 
-### Association
+# Association
 
 - belongs_to :user
 
