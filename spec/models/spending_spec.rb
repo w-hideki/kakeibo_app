@@ -10,20 +10,20 @@ RSpec.describe Spending, type: :model do
       expect(@spending).to be_valid
     end
 
-    it "categoryがない場合は登録できないこと" do
-      @spending.category = ""
+    it 'categoryがない場合は登録できないこと' do
+      @spending.category = ''
       @spending.valid?
-      expect(@spending.errors.full_messages).to include("カテゴリーを入力してください")
+      expect(@spending.errors.full_messages).to include('カテゴリーを入力してください')
     end
-    it "year_monthがない場合は登録できないこと" do
-      @spending.year_month = ""
+    it 'year_monthがない場合は登録できないこと' do
+      @spending.year_month = ''
       @spending.valid?
-      expect(@spending.errors.full_messages).to include("Year monthを入力してください")
+      expect(@spending.errors.full_messages).to include('Year monthを入力してください')
     end
-    it "valueがない場合は登録できないこと" do
-      @spending.value = ""
+    it 'valueがない場合は登録できないこと' do
+      @spending.value = ''
       @spending.valid?
-      expect(@spending.errors.full_messages).to include("価格を入力してください")
+      expect(@spending.errors.full_messages).to include('価格を入力してください')
     end
   end
 end
