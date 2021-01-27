@@ -143,6 +143,13 @@
 - ruby-version 2.6.5
 - rails-version 6.0.0
 - mysql2-version 0.4.4
+- Docker
+
+# test環境
+
+- rspec
+- CircleCI
+
 
 ```
 git clone URL
