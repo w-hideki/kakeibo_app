@@ -56,6 +56,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rspec_junit_formatter'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -69,7 +70,6 @@ gem 'gon'
 gem 'c3-rails'
 gem 'd3-rails', '~> 3.5.17'
 gem 'rails-i18n'
-gem 'rspec_junit_formatter'
 
 group :production do
   gem 'unicorn', '5.4.1'
