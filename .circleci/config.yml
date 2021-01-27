@@ -41,6 +41,10 @@ jobs:
         command: bundle exec rubocop
 
     - run:
+      name: yarn Install
+      command: yarn install
+      
+    - run:
         name: run tests
         command: |
           mkdir /tmp/test-results
