@@ -1,4 +1,5 @@
 AllCops:
+  NewCops: enable
 # 除外するディレクトリ（自動生成されたファイル）
 # デフォルト設定にある"vendor/**/*"が無効化されないように記述
  Exclude:
@@ -58,23 +59,23 @@ Style/EmptyMethod:
 
 # クラス内にクラスが定義されていないかチェック（無効）
 Style/ClassAndModuleChildren:
- Enabled: true
+ Enabled: false
 
 # 日本語でのコメントを許可
 Style/AsciiComments:
- Enabled: true
+ Enabled: false
 
 # クラスやモジュール定義前に、それらの説明書きがあるかをチェック（無効）
 Style/Documentation:
- Enabled: true
+ Enabled: false
 
 # ％i（）構文を使用していないシンボルで構成される配列リテラルをチェック（無効）
 Style/SymbolArray:
- Enabled: true
+ Enabled: false
 
 # 文字列に値が代入されて変わっていないかチェック（無効）
 Style/FrozenStringLiteralComment:
- Enabled: true
+ Enabled: false
 
 # メソッドパラメータ名の最小文字数を設定
 Naming/MethodParameterName:
