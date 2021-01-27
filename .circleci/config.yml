@@ -41,8 +41,8 @@ jobs:
         command: bundle exec rubocop
 
     - run:
-      name: yarn Install
-      command: yarn install
+        name: yarn Install
+        command: yarn install
 
     - type: cache-save
       name: Save bundle cache
