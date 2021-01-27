@@ -41,6 +41,15 @@ jobs:
         command: bundle exec rubocop
 
     - run:
+      name: yarn Install
+      command: yarn install
+
+    - type: cache-save
+      name: Save bundle cache
+      key: rails-demo-bundle-{{ checksum 'yarn.lock' }}
+      paths: .yarn-cache
+
+    - run:
         name: run tests
         command: |
           mkdir /tmp/test-results
