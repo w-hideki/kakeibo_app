@@ -11,5 +11,5 @@ class PostsController < ApplicationController
     @month = d.month
     @zanndaka = @kongetunoincomes - @kongetunospendings
     @allzandaka = @allincomes - @allspendings
-    end
+  end
 end

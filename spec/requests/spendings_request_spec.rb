@@ -1,5 +1,4 @@
 require 'rails_helper'
 
-RSpec.describe "Spendings", type: :request do
-
+RSpec.describe 'Spendings', type: :request do
 end
